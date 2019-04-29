@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <script src="assets/js/angular.js"></script>
+  <script src="exo5.js"></script>
+
+  <title>Exercice 5!</title>
+</head>
+
+<body>
+
+  <div class="text-center" ng-app="app" ng-controller="control">
+    <p ng-hide="hideShow">Ce discours a été fait à la mi-temps alors que l’équipe était menée. Au terme d’un match de folie, les Flowers
+      l’emportent et deviennent les vainqueurs du championnat.
+
+      Le mental joue pour beaucoup dans le sport et dans toute quête. Ce n’est pas
+      parce que l’on a les meilleures capacités physiques que l’on gagne. Certains athlètes font même appel
+      à l’hypnose pour décupler leurs capacités notamment en
+      haltérophilie.</p>
+    <button type="button" class="btn btn-warning" ng-click="show()">AFFICHER</button>
+    <button type="button" class="btn btn-info" ng-click="hide()">CACHER </button>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+
+</html>
