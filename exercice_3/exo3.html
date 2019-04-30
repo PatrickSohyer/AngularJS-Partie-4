@@ -17,9 +17,8 @@
 <body>
 
   <div ng-app="app" ng-controller="myCtrl">
-    <ul ng-repeat="show in marques">
-      <li ng-if="show.couleur == 'verte'">
-        <!--ng-if = si la couleur est égale à verte, ça l'affiche-->
+    <ul ng-repeat="show in marques | filter : {couleur:'verte'}">
+      <li>
         {{show.marque + " " + show.couleur}}
       </li>
     </ul>

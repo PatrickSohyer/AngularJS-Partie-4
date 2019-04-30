@@ -1,5 +1,5 @@
 var app = angular.module("app", []);
-app.controller("control", function($scope) {
+app.controller("control", ['$scope', function($scope) {
   $scope.phide1 = false;
   $scope.phide2 = false;
   $scope.show1 = function() {
@@ -10,4 +10,4 @@ app.controller("control", function($scope) {
     $scope.phide2 = false;
     $scope.phide1 = true;
   }
-});
+}]);
